@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='globals.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='contact.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet" />
+
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    
+    <title>Contact us</title>
+  </head>
+  <body>
+    <div class="frame">
+      <div class="div">
+
+        <img id="menu-icon" class="img-2" src="{{ url_for('static', filename='img/Frame.svg') }}" />
+
+        <div id="dropdown-menu">
+          <a href="{{ url_for('index') }}">Home</a>
+          <a href="{{ url_for('about') }}">About</a>
+          <a href="{{ url_for('learn') }}">Learn About Orbi</a>
+          <a href="{{ url_for('contact') }}">Contact</a>
+      </div>
+        <div class="contact-header-wrapper" data-aos="fade-up" data-aos-duration="800">
+          <h1 class="contact-title">Contact Us</h1>
+          <p class="contact-description">
+            We're here to help! Whether you have questions, feedback, or need support, reach out anytime and our team will get back to you as soon as possible.
+          </p>
+        </div>
+
+        <div class="overlap" data-aos="zoom-in" data-aos-duration="800">
+          <div class="ellipse"></div>
+          <img class="chatgpt-image-jun" src="{{ url_for('static', filename='img/Chatgpt-Image-Jun-19-2025-05-12-27-PM.png') }}" />
+        </div>
+
+        <form action="{{ url_for('contact') }}" method="POST" data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">
+          <div class="overlap-group">
+            <input type="text" name="name" placeholder="Name" required />
+          </div>
+
+          <div class="div-wrapper">
+            <input type="email" name="email" placeholder="Email" required />
+          </div>
+
+          <div class="overlap-2">
+            <textarea name="message" placeholder="Message" rows="4" required></textarea>
+          </div>
+
+          <button type="submit" class="overlap-3">
+            <div class="text-wrapper-5">Contact us now</div>
+          </button>
+        </form>
+
+        <div class="overlap-4">
+          <div class="overlap-group-2">
+            <img class="line" src="{{ url_for('static', filename='img/Line.svg') }}" />
+            <img class="chatgpt-image-jun-2" src="{{ url_for('static', filename='img/Chatgpt-Image-Jun-16-2025-04-02-37-PM.png') }}" />
+            <p class="p">
+              Driven by curiosity, guided by simplicity, and built to make technology feel more human. Bringing clarity
+              and confidence to your digital world—one interaction at a time.
+            </p>
+          </div>
+
+          <div class="text-wrapper-6">Quick Link’s</div>
+          <a href="{{ url_for('index') }}" class="text-wrapper-7">Home</a>
+          <a href="{{ url_for('about') }}" class="text-wrapper-8">About</a>
+          <a href="{{ url_for('learn') }}" class="text-wrapper-9">Learn About Orbi</a>
+          <p class="text-wrapper-10">© 2025 ORBI Ltd. All Rights Reserved</p>
+
+          <a href="https://www.facebook.com/login" target="_blank">
+            <img class="vector" src="{{ url_for('static', filename='img/vector.svg') }}" />
+          </a>
+          <a href="https://www.instagram.com" target="_blank">
+            <img class="vector-2" src="{{ url_for('static', filename='img/vector-2.svg') }}" />
+          </a>
+          <a href="https://twitter.com/login" target="_blank">
+            <img class="vector-3" src="{{ url_for('static', filename='img/vector-3.svg') }}" />
+          </a>
+          <a href="https://www.linkedin.com/login" target="_blank">
+            <img class="vector-4" src="{{ url_for('static', filename='img/vector-4.svg') }}" />
+          </a>
+        </div>
+
+        <a href="{{ url_for('contact') }}" class="text-wrapper-11">Contact</a>
+      </div>
+    </div>
+    <script src="{{ url_for('static', filename='menu.js') }}"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: true,
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='globals.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='register.css') }}">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet" />
+  <title>Register</title>
+</head>
+<body>
+  <div class="frame">
+    <div class="overlap-wrapper">
+      <div class="overlap">
+        <img class="rectangle" src="{{ url_for('static', filename='img/Rectangle-8.svg') }}" />
+        <div class="div">
+          <div class="text-wrapper">Register</div>
+
+          <form action="{{ url_for('register', next=request.args.get('next', 'index')) }}" method="POST" class="register-form">
+            
+            <!-- Hidden next value -->
+            <input type="hidden" name="next" value="{{ request.args.get('next', 'index') }}">
+
+            <div class="overlap-group input-group">
+              <div class="overlap-2">
+                <img class="line" src="{{ url_for('static', filename='img/line-3.svg') }}" />
+              </div>
+              <input type="text" id="username" name="username" class="input-overlay" placeholder=" " required />
+              <label for="username" class="text-wrapper-2">User name</label>
+              <img class="vector" src="{{ url_for('static', filename='img/Vector-5.svg') }}" />
+            </div>
+
+            <div class="overlap-3 input-group">
+              <div class="overlap-2">
+                <img class="img" src="{{ url_for('static', filename='img/line-4.svg') }}" />
+              </div>
+              <input type="email" id="email" name="email" class="input-overlay" placeholder=" " required />
+              <label for="email" class="text-wrapper-2">Email</label>
+              <img class="img-2" src="{{ url_for('static', filename='img/Frame-3.svg') }}" />
+            </div>
+
+            <div class="overlap-4 input-group">
+              <div class="overlap-2">
+                <img class="img" src="{{ url_for('static', filename='img/Line-5.svg') }}" />
+              </div>
+              <input type="password" id="password" name="password" class="input-overlay" placeholder=" " required />
+              <label for="password" class="text-wrapper-2">Password</label>
+              <img class="img-3" src="{{ url_for('static', filename='img/Frame-2.svg') }}" />
+            </div>
+
+            <div class="group">
+              <button type="submit" class="overlap-group-2">
+                <div class="rectangle-2"></div>
+                <div class="text-wrapper-3">Register</div>
+              </button>
+            </div>
+          </form>
+
+          <div class="dont-have-an-account">
+            <p class="don-t-have-an">
+              Already have an account? 
+              <a href="{{ url_for('login', next=request.args.get('next', 'index')) }}">Login</a>
+            </p>
+          </div>
+
+          <img class="group-2" src="{{ url_for('static', filename='img/Group-10.png') }}" />
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

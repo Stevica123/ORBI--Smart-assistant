@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='globals.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet" />
+    
+   
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    
+    <title>ORBI - Smart Assistant</title>
+  </head>
+  <body>
+    <div class="frame">
+      <div class="div">
+        <div class="container">
+          <div class="overlap">
+            <div class="overlap-group">
+              <div class="ellipse">
+                <iframe
+                  src="https://my.spline.design/genkubgreetingrobot-9rR23eYwUxI7onBNgF66fizS/"
+                  frameborder="0"
+                  width="100%"
+                  height="100%"
+                  allow="autoplay; fullscreen"
+                ></iframe>
+              </div>
+              <div class="rectangle"></div>
+             {% if not user %}
+              <div class="div-wrapper">
+                <a href="{{ url_for('login') }}" class="text-wrapper">Log in</a>
+            </div>
+            <div class="div-wrapper-2">
+                <a href="{{ url_for('register') }}" class="text-wrapper-2">Register</a>
+            </div>
+            {% else %}
+            <div class="profile-container">
+            <div class="profile-circle" id="profileCircle" title="{{ user }}">
+              {{ user[0]|upper }}
+            <div class="dropdown" id="profileDropdown" style="display:none;">
+              <a href="{{ url_for('logout') }}">Logout</a>
+          </div>
+      </div>
+    </div>
+      {% endif %}
+      <script src="{{ url_for('static', filename='profile.js') }}"></script>
+              </div>
+              <div class="text-wrapper-3">Introducing ORBI</div>
+              <p class="p">Your smart assistant — simple, helpful, and always one step ahead.</p>
+              <div class="group">
+                <a href="{{ url_for('contact') }}" class="overlap-group-2">
+                  <div class="text-wrapper-4">Contact</div>
+                </a>
+              </div>
+            </div>
+            <div class="div-wrapper-3">
+              <a href="{{ url_for('start') }}" class="text-wrapper-5">Start with Orbi</a>
+            </div>
+            <div class="div-wrapper-4">
+                <a href="{{ url_for('learn') }}" class="text-wrapper-5">Learn about Orbi</a>
+            </div>
+            <p class="text-wrapper-6">Ask anything, anytime — and get the answers you need</p>
+            <img class="chatgpt-image-jun" src="{{ url_for('static', filename='img/ChatGPT-Image-Jun-16-2025-04-02-37-PM.png') }}" />
+            <div class="overlap-group-wrapper">
+              <a href="{{ url_for('index') }}"class="overlap-group-2">
+                <div class="text-wrapper-7">Home</div>
+              </a>
+            </div>
+            <div class="overlap-wrapper">
+              <a href="{{ url_for('about') }}" class="overlap-group-2">
+                <div class="text-wrapper-8">About</div>
+              </a>
+            </div>
+          </div>
+
+          <div class="text-wrapper-9" data-aos="fade-up">How ORBI Works</div>
+
+          <div class="group-2">
+            <div class="group-3">
+              <img class="rectangle-1" src="{{ url_for('static', filename='img/ChatGPT-Image-Jun-17-2025-11-06-35-AM.png') }}" data-aos="fade-up" data-aos-delay="100" />
+              <img class="rectangle-2" src="{{ url_for('static', filename='img/ChatGPT-Image-Jun-17-2025-11-09-26-AM.png') }}" data-aos="fade-up" data-aos-delay="300" />
+              <img class="rectangle-3" src="{{ url_for('static', filename='img/ChatGPT-Image-Jun-17-2025-11-11-05-AM.png') }}" data-aos="fade-up" data-aos-delay="500" />
+            </div>
+            <p class="ask-anything-just" data-aos="fade-up" data-aos-delay="700">
+              Ask anything<br />Just type your question
+            </p>
+            <p class="ORBI-thinks-smart" data-aos="fade-up" data-aos-delay="900">
+              ORBI thinks<br />Smart assistant processes your query
+            </p>
+            <p class="you-get-answers-fast" data-aos="fade-up" data-aos-delay="1100">
+              You get answers<br />Fast, friendly, and useful
+            </p>
+          </div>
+
+          <div class="group-4">
+            <img class="istockphoto" src="{{ url_for('static', filename='img/istockphoto.png') }}" data-aos="fade-right" />
+            <img class="gettyimages" src="{{ url_for('static', filename='img/GettyImages.png') }}" data-aos="fade-right" />
+            <img class="premium-photo" src="{{ url_for('static', filename='img/premium-photo.png') }}" data-aos="fade-right"/>
+          </div>
+
+          <div class="group-5">
+            <p class="text-wrapper-10" data-aos="fade-left" data-aos-delay="700">Orbi – Your Friendly Smart Assistant for Everyone</p>
+            <p class="text-wrapper-11" data-aos="fade-left" data-aos-delay="900">
+              Orbi is a smart assistant designed to help everyone — whether you’re a student, a worker, or just someone
+              looking for quick, easy answers. It’s always ready to assist you with everyday questions, making your day
+              simpler and more productive. Just ask, and Orbi will provide helpful answers instantly.
+            </p>
+          </div>
+
+          <div class="group-6" data-aos="zoom-in">
+            <div class="text-wrapper-12">Download our App</div>
+            <p class="text-wrapper-13">
+              Get Orbi assistant on your mobile device and stay connected wherever you go. Available on iOS and Android.
+          </p>
+          <a href="https://play.google.com/store/apps" target="_blank" rel="noopener noreferrer">
+            <img class="google-play-store" src="{{ url_for('static', filename='img/google-play-store.png') }}" />
+          </a>
+          <a href="https://www.apple.com/app-store/" target="_blank" rel="noopener noreferrer">
+            <img class="download-on-the-app" src="{{ url_for('static', filename='img/app-store.png') }}" />
+          </a>
+      </div>
+          <img class="line" src="{{ url_for('static', filename='img/line.svg') }}" />
+          <div class="overlap-2">
+            <img class="chatgpt-image-jun-2" src="{{ url_for('static', filename='img/Chatgpt-Image-Jun-16-2025-04-02-37-PM.png') }}" />
+            <p class="text-wrapper-14">
+              Driven by curiosity, guided by simplicity, and built to make technology feel more human. Bringing clarity
+              and confidence to your digital world—one interaction at a time.
+            </p>
+          </div>
+
+          <div class="text-wrapper-15">Quick Link’s</div>
+          <a href="{{ url_for('index') }}" class="text-wrapper-16">Home</a>
+          <a href="{{ url_for('about') }}" class="text-wrapper-17">About</a>
+          <a href="{{ url_for('learn') }}" class="text-wrapper-18">Learn About Orbi</a>
+          <a href="{{ url_for('contact') }}" class="text-wrapper-19">Contact</a>
+          <p class="text-wrapper-20">© 2025 ORBI Ltd. All Rights Reserved</p>
+
+          <a href="https://www.facebook.com/login" target="_blank">
+            <img class="vector" src="{{ url_for('static', filename='img/Vector.svg') }}" />
+          </a>
+          <a href="https://www.instagram.com" target="_blank">
+            <img class="vector-2" src="{{ url_for('static', filename='img/Vector-2.svg') }}" />
+          </a>
+          <a href="https://twitter.com/login" target="_blank">
+            <img class="vector-3" src="{{ url_for('static', filename='img/Vector-3.svg') }}" />
+          </a>
+          <a href="https://www.linkedin.com/login" target="_blank">
+            <img class="vector-4" src="{{ url_for('static', filename='img/Vector-4.svg') }}" />
+          </a>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: true,
+      });
+    </script>
+  </body>
+</html>

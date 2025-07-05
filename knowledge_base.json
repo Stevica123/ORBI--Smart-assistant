@@ -1,0 +1,354 @@
+[
+  {
+    "question": "How do you make mint tea?",
+    "answer": "To make mint tea, boil water and pour it over fresh or dried mint leaves. Let it steep for about 5-7 minutes, then strain and serve. Mint tea is refreshing and can help soothe the stomach."
+  },
+  {
+    "question": "Who was the first president of the United States?",
+    "answer": "The first president of the United States was George Washington. He served from 1789 to 1797 and is often called the 'Father of His Country' due to his leadership during the American Revolutionary War and his role in founding the nation."
+  },
+  {
+    "question": "What are the basic rules of soccer?",
+    "answer": "Soccer is played by two teams of eleven players each. The objective is to score goals by getting the ball into the opponent's net using any part of the body except the hands and arms, except for the goalkeeper. The game consists of two 45-minute halves, and the team with the most goals at the end wins."
+  },
+  {
+    "question": "What is photosynthesis?",
+    "answer": "Photosynthesis is the process by which green plants and some other organisms use sunlight to synthesize foods from carbon dioxide and water. It produces oxygen as a byproduct and is essential for life on Earth."
+  },
+  {
+    "question": "What is the capital of France?",
+    "answer": "The capital of France is Paris. Known as the 'City of Light', Paris is famous for its art, culture, fashion, and landmarks like the Eiffel Tower and the Louvre Museum."
+  },
+  {
+    "question": "Who invented the telephone?",
+    "answer": "The telephone was invented by Alexander Graham Bell in 1876. His invention revolutionized communication by allowing people to speak with each other over long distances."
+  },
+  {
+    "question": "How do airplanes fly?",
+    "answer": "Airplanes fly by generating lift through their wings. The shape of the wings causes air pressure to be lower on top and higher underneath, lifting the plane into the air. Engines provide the thrust needed to move forward."
+  },
+  {
+    "question": "What is the tallest mountain in the world?",
+    "answer": "The tallest mountain in the world is Mount Everest, which stands at 8,848 meters (29,029 feet) above sea level. It is located in the Himalayas on the border between Nepal and China."
+  },
+  {
+    "question": "What is the main ingredient in bread?",
+    "answer": "The main ingredient in bread is flour, typically made from wheat. Other ingredients include water, yeast, and salt, which work together to create the dough that is baked into bread."
+  },
+  {
+    "question": "How does a computer work?",
+    "answer": "A computer works by processing data through its hardware components like the CPU, memory, and storage. It executes instructions from software programs to perform tasks ranging from simple calculations to complex operations."
+  },
+  {
+    "question": "What causes rain?",
+    "answer": "Rain is caused by the condensation of water vapor in the atmosphere. When air rises and cools, the moisture condenses into droplets that combine and fall to the ground as precipitation."
+  },
+  {
+    "question": "Who wrote 'Romeo and Juliet'?",
+    "answer": "The play 'Romeo and Juliet' was written by William Shakespeare, one of the most famous playwrights in history. It is a tragic love story set in Verona, Italy."
+  },
+  {
+    "question": "What is the human heart?",
+    "answer": "The human heart is a muscular organ that pumps blood through the circulatory system. It supplies oxygen and nutrients to the body and removes waste products."
+  },
+  {
+    "question": "How do plants grow?",
+    "answer": "Plants grow through a process called cell division and elongation. They absorb sunlight, water, and nutrients from the soil to create energy and build their tissues."
+  },
+  {
+    "question": "What is gravity?",
+    "answer": "Gravity is a natural force that attracts two bodies toward each other. On Earth, it gives weight to physical objects and causes them to fall toward the ground when dropped."
+  },
+  {
+    "question": "Who was Albert Einstein?",
+    "answer": "Albert Einstein was a renowned physicist known for developing the theory of relativity. His work revolutionized our understanding of space, time, and energy."
+  },
+  {
+    "question": "What is a smartphone?",
+    "answer": "A smartphone is a mobile device that combines a phone with a handheld computer. It can make calls, send texts, browse the internet, take photos, and run applications."
+  },
+  {
+    "question": "How do you boil an egg?",
+    "answer": "To boil an egg, place it in a pot of water and bring it to a boil. Cook for about 9-12 minutes depending on how hard you want the yolk. Then, cool it in cold water before peeling."
+  },
+  {
+    "question": "What is the largest ocean?",
+    "answer": "The largest ocean in the world is the Pacific Ocean. It covers more than 30% of the Earth's surface and is deeper than any other ocean."
+  },
+  {
+    "question": "What causes lightning?",
+    "answer": "Lightning is caused by the buildup of electrical charges in storm clouds. When the difference in charge becomes too great, it discharges as a bolt of lightning."
+  },
+  {
+    "question": "Who was the first man on the moon?",
+    "answer": "The first man to walk on the moon was Neil Armstrong. He did so on July 20, 1969, during the Apollo 11 mission."
+  },
+  {
+    "question": "What is the internet?",
+    "answer": "The internet is a global network of computers that communicate with each other to share information and resources."
+  },
+  {
+    "question": "How does the weather forecast work?",
+    "answer": "Weather forecasts are made by collecting data from satellites, weather stations, and radars. Meteorologists use computer models to predict future weather conditions."
+  },
+  {
+    "question": "What is the chemical symbol for water?",
+    "answer": "The chemical symbol for water is H2O, which means each molecule has two hydrogen atoms and one oxygen atom."
+  },
+  {
+    "question": "What is democracy?",
+    "answer": "Democracy is a system of government where citizens vote to elect representatives or make decisions directly."
+  },
+  {
+    "question": "How do vaccines work?",
+    "answer": "Vaccines stimulate the immune system to recognize and fight specific pathogens, providing protection against diseases."
+  },
+  {
+    "question": "What is a black hole?",
+    "answer": "A black hole is a region in space where gravity is so strong that nothing, not even light, can escape from it."
+  },
+  {
+    "question": "What is the speed of light?",
+    "answer": "The speed of light in a vacuum is approximately 299,792 kilometers per second (about 186,282 miles per second)."
+  },
+  {
+    "question": "Who painted the Mona Lisa?",
+    "answer": "The Mona Lisa was painted by Leonardo da Vinci, a famous Italian Renaissance artist."
+  },
+  {
+    "question": "What is climate change?",
+    "answer": "Climate change refers to long-term shifts in temperature and weather patterns, often caused by human activities like burning fossil fuels."
+  },
+  {
+    "question": "How do birds fly?",
+    "answer": "Birds fly by flapping their wings to generate lift and thrust, using their lightweight skeletons and feathers to stay airborne."
+  },
+  {
+    "question": "What is the capital of Japan?",
+    "answer": "The capital of Japan is Tokyo, one of the largest and most populous cities in the world."
+  },
+  {
+    "question": "What is an ecosystem?",
+    "answer": "An ecosystem is a community of living organisms interacting with each other and their environment."
+  },
+  {
+    "question": "How does a refrigerator work?",
+    "answer": "A refrigerator works by using a refrigerant to absorb heat from inside and release it outside, keeping food cold."
+  },
+  {
+    "question": "What is DNA?",
+    "answer": "DNA is the molecule that carries genetic information in living organisms."
+  },
+  {
+    "question": "What causes earthquakes?",
+    "answer": "Earthquakes are caused by the movement of tectonic plates beneath the Earth's surface."
+  },
+  {
+    "question": "Who wrote 'Harry Potter'?",
+    "answer": "The 'Harry Potter' series was written by J.K. Rowling, a British author."
+  },
+  {
+    "question": "What is a democracy?",
+    "answer": "Democracy is a political system where the population exercises power by voting."
+  },
+  {
+    "question": "How do plants produce oxygen?",
+    "answer": "Plants produce oxygen during photosynthesis by converting carbon dioxide and water into glucose and oxygen using sunlight."
+  },
+  {
+    "question": "What is the largest desert in the world?",
+    "answer": "The largest desert in the world is the Antarctic Desert, which covers most of Antarctica."
+  },
+  {
+    "question": "What is renewable energy?",
+    "answer": "Renewable energy comes from sources that can be naturally replenished, like solar, wind, and hydro power."
+  },
+  {
+    "question": "Who was Martin Luther King Jr.?",
+    "answer": "Martin Luther King Jr. was a civil rights leader who fought for racial equality in the United States through nonviolent protest."
+  },
+  {
+    "question": "What is the Pythagorean theorem?",
+    "answer": "The Pythagorean theorem states that in a right triangle, the square of the hypotenuse is equal to the sum of the squares of the other two sides."
+  },
+  {
+    "question": "How do bees make honey?",
+    "answer": "Bees collect nectar from flowers, then convert it into honey through digestion and evaporation inside the hive."
+  },
+  {
+    "question": "What is the human brain?",
+    "answer": "The human brain is the control center of the nervous system, responsible for thought, memory, emotions, and coordination."
+  },
+  {
+    "question": "What causes tides?",
+    "answer": "Tides are caused by the gravitational pull of the moon and the sun on Earth's oceans."
+  },
+  {
+    "question": "What is a galaxy?",
+    "answer": "A galaxy is a massive system of stars, gas, dust, and dark matter held together by gravity."
+  },
+  {
+    "question": "How do volcanoes form?",
+    "answer": "Volcanoes form when magma from beneath the Earth's crust escapes to the surface through vents."
+  },
+  {
+    "question": "What is artificial intelligence?",
+    "answer": "Artificial intelligence is the simulation of human intelligence processes by machines, especially computer systems."
+  },
+  {
+    "question": "Who discovered penicillin?",
+    "answer": "Penicillin was discovered by Alexander Fleming in 1928 and became the first widely used antibiotic."
+  },
+  {
+    "question": "What is the currency of the United Kingdom?",
+    "answer": "The currency of the United Kingdom is the British Pound Sterling (£)."
+  },
+  {
+    "question": "How do magnets work?",
+    "answer": "Magnets produce a magnetic field that attracts or repels certain materials like iron."
+  },
+  {
+    "question": "What is the tallest building in the world?",
+    "answer": "The tallest building in the world is the Burj Khalifa in Dubai, standing at 828 meters (2,717 feet)."
+  },
+  {
+    "question": "What is the function of the lungs?",
+    "answer": "The lungs allow oxygen to enter the blood and carbon dioxide to be expelled from the body."
+  },
+  {
+    "question": "Who wrote the Declaration of Independence?",
+    "answer": "The Declaration of Independence was primarily written by Thomas Jefferson in 1776."
+  },
+  {
+    "question": "How does the solar system work?",
+    "answer": "The solar system consists of the sun and all the objects that orbit it, including planets, moons, asteroids, and comets."
+  },
+  {
+    "question": "What is the main gas in the Earth's atmosphere?",
+    "answer": "The main gas in Earth's atmosphere is nitrogen, making up about 78% of the air."
+  },
+  {
+    "question": "What causes seasons?",
+    "answer": "Seasons are caused by the tilt of Earth's axis as it orbits the sun, resulting in varying sunlight angles and lengths."
+  },
+  {
+    "question": "What is a black hole?",
+    "answer": "A black hole is a region in space with a gravitational pull so strong that nothing can escape from it, not even light."
+  },
+  {
+    "question": "How does a car engine work?",
+    "answer": "A car engine burns fuel in cylinders, creating controlled explosions that move pistons to power the vehicle."
+  },
+  {
+    "question": "Who was Cleopatra?",
+    "answer": "Cleopatra was the last active ruler of the Ptolemaic Kingdom of Egypt, known for her intelligence and political acumen."
+  },
+  {
+    "question": "What is the theory of evolution?",
+    "answer": "The theory of evolution explains how species change over time through natural selection and genetic variation."
+  },
+  {
+    "question": "What is the purpose of the United Nations?",
+    "answer": "The United Nations is an international organization aimed at promoting peace, security, and cooperation among countries."
+  },
+  {
+    "question": "How do plants get water?",
+    "answer": "Plants absorb water through their roots from the soil, which is then transported to other parts of the plant."
+  },
+  {
+    "question": "What is the Richter scale?",
+    "answer": "The Richter scale measures the magnitude of earthquakes based on the seismic waves they produce."
+  },
+  {
+    "question": "Who was Leonardo da Vinci?",
+    "answer": "Leonardo da Vinci was a Renaissance artist, inventor, and scientist known for works like the Mona Lisa and The Last Supper."
+  },
+  {
+    "question": "What is the freezing point of water?",
+    "answer": "The freezing point of water is 0 degrees Celsius (32 degrees Fahrenheit) under normal atmospheric pressure."
+  },
+  {
+    "question": "How do birds migrate?",
+    "answer": "Birds migrate by flying long distances to find favorable climates for breeding or feeding, often using the sun, stars, and Earth's magnetic field for navigation."
+  },
+  {
+    "question": "What is an atom?",
+    "answer": "An atom is the smallest unit of matter that retains the properties of an element."
+  },
+  {
+    "question": "What is climate change?",
+    "answer": "Climate change refers to long-term shifts in temperatures and weather patterns, primarily due to human activities such as burning fossil fuels."
+  },
+  {
+    "question": "How does electricity work?",
+    "answer": "Electricity is the flow of electric charge through a conductor, powering devices and machines."
+  },
+  {
+    "question": "What is a volcano?",
+    "answer": "A volcano is an opening in Earth's crust through which molten rock, ash, and gases erupt."
+  },
+  {
+    "question": "Who was Marie Curie?",
+    "answer": "Marie Curie was a pioneering physicist and chemist who conducted groundbreaking research on radioactivity."
+  },
+  {
+    "question": "What is the Great Wall of China?",
+    "answer": "The Great Wall of China is a series of fortifications built to protect Chinese states from invasions."
+  },
+  {
+    "question": "How do fish breathe underwater?",
+    "answer": "Fish use gills to extract oxygen dissolved in water, allowing them to breathe underwater."
+  },
+  {
+    "question": "What is a tornado?",
+    "answer": "A tornado is a rapidly rotating column of air that extends from a thunderstorm to the ground, causing destruction."
+  },
+  {
+    "question": "Who discovered America?",
+    "answer": "Christopher Columbus is credited with discovering America in 1492, although indigenous peoples lived there long before."
+  },
+  {
+    "question": "What is the boiling point of water?",
+    "answer": "Water boils at 100 degrees Celsius (212 degrees Fahrenheit) at sea level."
+  },
+  {
+    "question": "How do plants reproduce?",
+    "answer": "Plants reproduce through seeds or spores, often involving pollination by wind, insects, or animals."
+  },
+  {
+    "question": "What is an ecosystem?",
+    "answer": "An ecosystem is a community of living organisms interacting with each other and their environment."
+  },
+  {
+    "question": "What is solar energy?",
+    "answer": "Solar energy is energy harnessed from the sun's rays, used to generate electricity or heat."
+  },
+  {
+    "question": "Who was William Shakespeare?",
+    "answer": "William Shakespeare was an English playwright and poet, widely regarded as one of the greatest writers in the English language."
+  },
+  {
+    "question": "How do you make a sandwich?",
+    "answer": "To make a sandwich, take two slices of bread and add fillings such as meat, cheese, vegetables, and condiments. Then, put the slices together and serve."
+  },
+  {
+    "question": "What is the purpose of roots in plants?",
+    "answer": "Roots anchor the plant and absorb water and nutrients from the soil."
+  },
+  {
+    "question": "What causes the tides in the ocean?",
+    "answer": "Tides are caused by the gravitational pull of the moon and the sun on Earth's oceans."
+  },
+  {
+    "question": "Who was Isaac Newton?",
+    "answer": "Isaac Newton was a physicist and mathematician who formulated the laws of motion and universal gravitation."
+  },
+  {
+    "question": "What is recycling?",
+    "answer": "Recycling is the process of converting waste materials into reusable materials to reduce pollution and conserve resources."
+  },
+  {
+    "question": "How do you make pasta?",
+    "answer": "To make pasta, boil water with salt, add pasta, cook until tender, then drain and serve with sauce."
+  }
+]

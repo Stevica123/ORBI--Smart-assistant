@@ -1,0 +1,627 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.frame {
+  background-color: rgba(255, 255, 255, 1.0);
+  overflow-x: hidden;
+  overflow-y: visible;
+  background: linear-gradient(
+    180deg,
+    rgba(153, 199, 243, 1) 0%,
+    rgba(89, 116, 141, 1) 100%
+  );
+  width: 100vw;
+  min-height: 3461px;
+  position: relative;
+}
+
+#menu-icon {
+  cursor: pointer;
+  z-index: 1001;
+}
+
+#dropdown-menu {
+  position: absolute;
+  top: 90px;
+  left: 50px;
+  background: linear-gradient(
+    135deg,
+    rgba(153, 199, 243, 0.95) 40%,
+    rgba(89, 116, 141, 0.95) 100%
+  );
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  padding: 16px 24px;
+  width: 200px;
+  display: none;
+  flex-direction: column;
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  opacity: 0;
+  transform: translateY(-10px);
+  pointer-events: none;
+}
+
+#dropdown-menu.active {
+  display: flex;
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+#dropdown-menu a {
+  font-family: "Outfit", sans-serif;
+  font-size: 18px;
+  color: #000; 
+  padding: 10px 0;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  transition: background-color 0.2s ease;
+}
+
+#dropdown-menu a:last-child {
+  border-bottom: none;
+}
+
+#dropdown-menu a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
+}
+
+
+
+.frame .text-wrapper {
+  position: absolute;
+  top: 46px;
+  left: 820px;
+  font-family: "Outfit", Helvetica, sans-serif;
+  font-weight: 700;
+  color: #000000;
+  font-size: 36px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .overlap {
+  position: absolute;
+  width: 409px;
+  height: 90px;
+  top: 318px;
+  left: 796px;
+}
+
+.frame .text-wrapper-2 {
+  top: 0;
+  left: 140px;
+  position: absolute;
+  font-family: "Outfit", Helvetica, sans-serif;
+  font-weight: 400;
+  color: #000000;
+  font-size: 36px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .text-wrapper-3 {
+  position: absolute;
+  width: 354px;
+  top: 2px;
+  left: 200px;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 126, 246, 1) 0%,
+    rgba(0, 74, 144, 1) 100%
+  );
+  -webkit-background-clip: text !important;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-inline-color: transparent;
+  font-family: "Outfit", Helvetica, sans-serif;
+  font-weight: 400;
+  color: transparent;
+  font-size: 36px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .i-am-the-sole-author {
+  position: absolute;
+  width: 600px;
+  top: 420px;
+  left: 880px;
+  font-family: "Outfit", Helvetica, sans-serif;
+  font-weight: 400;
+  color: #000000;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .overlap-group {
+  position: absolute;
+  width: 563px;
+  height: 491px;
+  top: 187px;
+  left: 0;
+}
+
+.frame .rectangle {
+  position: absolute;
+  width: 563px;
+  height: 357px;
+  top: 134px;
+  left: 0;
+  background-color: #34aeda;
+  border-radius: 0px 500px 500px 0px;
+}
+
+.frame .chatgpt-image-jun {
+  position: absolute;
+  width: 480px;
+  height: 491px;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+.frame .text-wrapper-4 {
+  opacity: 1 !important;
+  visibility: visible !important;
+  display: block !important;
+  position: relative;
+  top: 940px;
+  left: 170px;
+  font-family: "Outfit", Helvetica, sans-serif;
+  font-weight: 400;
+  color: #000000;
+  font-size: 36px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+
+.frame .text-wrapper-5 {
+  position: absolute;
+  top: 936px;
+  left: 230px;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 126, 246, 1) 0%,
+    rgba(0, 74, 144, 1) 100%
+  );
+  -webkit-background-clip: text !important;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-inline-color: transparent;
+  font-family: "Outfit", Helvetica, sans-serif;
+  font-weight: 400;
+  color: transparent;
+  font-size: 36px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .in-a-world {
+  position: absolute;
+  top: 1040px;
+  left: 150px;
+  width: 600px;
+  font-family: "Outfit", Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #000000;
+  line-height: 28px;
+}
+
+
+.frame .text-wrapper-7 {
+  font-family: "Inter-Regular", Helvetica;
+  color: #000000;
+  position: absolute;
+  top: 1200px;
+  left: 110px;
+  font-size: 20px;
+  font-weight: 400;
+  width: 600px;
+  line-height: 28px;
+}
+
+
+.frame .group {
+  position: absolute;
+  top: 1260px;
+  left: 110px;
+}
+
+.frame .overlap-wrapper {
+  position: absolute;
+  top: 1390px;
+  left: 110px;
+}
+
+
+.frame .overlap-group-wrapper {
+  position: absolute;
+  top: 1520px;
+  left: 110px;
+}
+
+.frame .overlap-group-2 {
+  display: flex;
+  align-items: center;
+  border-radius: 25px;
+  border: 2px solid #000000;
+  padding: 20px 30px;
+  gap: 20px;
+  width: 700px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+.frame .img {
+  width: 90px;
+  height: 70px;
+  object-fit: contain;
+}
+
+.frame .overlap-group-2 p,
+.frame .text-wrapper-6 {
+  font-family: "Outfit", Helvetica, sans-serif;
+  font-size: 20px;
+  color: #000000;
+  margin: 0;
+  line-height: 28px;
+}
+
+
+.frame .overlap-2 {
+  position: absolute;
+  width: 698px;
+  height: 835px;
+  top: 1009px;
+  left: 1050px;
+}
+
+.frame .element {
+  position: absolute;
+  width: 487px;
+  height: 605px;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+.frame .pngtree-responsive {
+  position: absolute;
+  width: 538px;
+  height: 555px;
+  top: 280px;
+  left: 160px;
+  object-fit: cover;
+}
+
+.frame .orbi-s-creation {
+  position: absolute;
+  width: 476px;
+  top: 2076px;
+  left: 680px;
+  background: linear-gradient(180deg, rgba(0, 126, 246, 1) 0%, rgba(0, 74, 144, 1) 100%);
+  -webkit-background-clip: text !important;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-inline-color: transparent;
+  font-family: "Outfit", Helvetica, sans-serif;
+  font-weight: 400;
+  color: transparent;
+  font-size: 36px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .span {
+  color: #000000;
+}
+
+.frame .text-wrapper-8 {
+  position: absolute;
+  width: 687px;
+  top: 2231px;
+  left: 550px;
+  font-family: "Outfit", Helvetica, sans-serif;
+  font-weight: 400;
+  color: #000000;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .overlap-3 {
+  position: absolute;
+  width: 1282px;
+  height: 269px;
+  top: 2521px;
+  left: 270px;
+}
+
+.frame .rectangle-2 {
+  position: absolute;
+  width: 1220px;
+  height: 269px;
+  top: 0;
+  left: 31px;
+  border-radius: 70px;
+  background: linear-gradient(
+    180deg,
+    rgba(79, 120, 157, 1) 40%,
+    rgba(89, 116, 141, 1) 100%
+  );
+}
+
+.frame .unnamed {
+  position: absolute;
+  width: 166px;
+  height: 139px;
+  top: 65px;
+  left: 142px;
+  object-fit: cover;
+}
+
+.frame .element-2 {
+  position: absolute;
+  width: 166px;
+  height: 139px;
+  top: 65px;
+  left: 403px;
+  object-fit: cover;
+}
+
+.frame .python-programming {
+  position: absolute;
+  width: 166px;
+  height: 139px;
+  top: 65px;
+  left: 664px;
+  object-fit: cover;
+}
+
+.frame .profile {
+  position: absolute;
+  width: 166px;
+  height: 139px;
+  top: 65px;
+  left: 956px;
+  object-fit: cover;
+}
+
+.frame .text-wrapper-9 {
+  position: absolute;
+  top: 224px;
+  left: 197px;
+  font-family: "Outfit", Helvetica, sans-serif;
+  font-weight: 400;
+  color: #0d0d0d;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .text-wrapper-10 {
+  position: absolute;
+  top: 224px;
+  left: 457px;
+  font-family: "Outfit", Helvetica, sans-serif;
+  font-weight: 400;
+  color: #0f0f0f;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .text-wrapper-11 {
+  position: absolute;
+  top: 224px;
+  left: 719px;
+  font-family: "Outfit", Helvetica, sans-serif;
+  font-weight: 400;
+  color: #0c0b0b;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .text-wrapper-12 {
+  position: absolute;
+  top: 224px;
+  left: 1012px;
+  font-family: "Outfit", Helvetica, sans-serif;
+  font-weight: 400;
+  color: #0e0e0e;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .ellipse {
+  left: 0;
+  background-color: #064883;
+  position: absolute;
+  width: 62px;
+  height: 50px;
+  top: 110px;
+  border-radius: 31px / 25px;
+}
+
+.frame .ellipse-2 {
+  left: 1220px;
+  background-color: #074883;
+  position: absolute;
+  width: 62px;
+  height: 50px;
+  top: 110px;
+  border-radius: 31px / 25px;
+}
+
+
+.frame .img-2 {
+  position: absolute;
+  width: 41px;
+  height: 36px;
+  top: 47px;
+  left: 70px;
+}
+
+.frame .line {
+  position: absolute;
+  width: 1760px;  
+  height: 1px;
+  top: 3000px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: black;
+}
+
+
+.frame .overlap-4 {
+  position: absolute;
+  width: 399px;
+  height: 340px;
+  top: 3006px;
+  left: 83px;
+}
+
+.frame .chatgpt-image-jun-2 {
+  position: absolute;
+  width: 223px;
+  height: 223px;
+  top: 0;
+  left: 160px;
+  object-fit: cover;
+}
+
+.frame .text-wrapper-13 {
+  position: absolute;
+  width: 399px;
+  top: 215px;
+  left: 100px;
+  font-family: "Outfit", Helvetica, sans-serif;
+  font-weight: 700;
+  color: #000000;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .text-wrapper-14 {
+  position: absolute;
+  width: 110px;
+  top: 3109px;
+  left: 860px;
+  font-family: "Outfit", Helvetica, sans-serif;
+  font-weight: 700;
+  color: #000000;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.frame .text-wrapper-15 {
+  position: absolute;
+  top: 3182px;
+  left: 885px;
+  font-family: "Outfit", Helvetica, sans-serif;
+  font-weight: 700;
+  color: #000000bf;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .text-wrapper-16 {
+  position: absolute;
+  top: 3245px;
+  left: 885px;
+  font-family: "Outfit", Helvetica, sans-serif;
+  font-weight: 700;
+  color: #000000bf;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .text-wrapper-17 {
+  position: absolute;
+  top: 3303px;
+  left: 847px;
+  font-family: "Outfit", Helvetica, sans-serif;
+  font-weight: 700;
+  color: #000000bf;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .text-wrapper-18 {
+  position: absolute;
+  top: 3356px;
+  left: 880px;
+  font-family: "Outfit", Helvetica, sans-serif;
+  font-weight: 700;
+  color: #000000bf;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .text-wrapper-19 {
+  position: absolute;
+  width: 537px;
+  top: 3162px;
+  left: 1110px;
+  font-family: "Outfit", Helvetica, sans-serif;
+  font-weight: 600;
+  color: #000000;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .vector {
+  position: absolute;
+  width: 39px;
+  height: 32px;
+  top: 3267px;
+  left: 1300px;
+}
+
+.frame .vector-2 {
+  position: absolute;
+  width: 33px;
+  height: 32px;
+  top: 3266px;
+  left: 1359px;
+}
+
+.frame .vector-3 {
+  position: absolute;
+  width: 31px;
+  height: 32px;
+  top: 3266px;
+  left: 1455px;
+}
+
+.frame .vector-4 {
+  position: absolute;
+  width: 33px;
+  height: 26px;
+  top: 3269px;
+  left: 1410px;
+}

@@ -1,0 +1,607 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.frame {
+    background-color: rgba(255, 255, 255, 1.0);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.frame .div {
+    background-color: rgba(255, 255, 255, 1.0);
+    background: linear-gradient(
+        180deg,
+        rgba(153, 199, 243, 1) 0%,
+        rgba(89, 116, 141, 1) 100%
+    );
+    width: 100vw;
+    height: 3436px;
+    position: relative;
+}
+
+#menu-icon {
+  position: relative;
+  top: 25px; 
+  left: 90px;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+
+#dropdown-menu {
+  position: absolute;
+  top: 90px;
+  left: 50px;
+  background: linear-gradient(
+    135deg,
+    rgba(153, 199, 243, 0.95) 40%,
+    rgba(89, 116, 141, 0.95) 100%
+  );
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  padding: 16px 24px;
+  width: 200px;
+  display: none;
+  flex-direction: column;
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  opacity: 0;
+  transform: translateY(-10px);
+  pointer-events: none;
+}
+
+#dropdown-menu.active {
+  display: flex;
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+#dropdown-menu a {
+  font-family: "Outfit", sans-serif;
+  font-size: 18px;
+  color: #000; 
+  padding: 10px 0;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  transition: background-color 0.2s ease;
+}
+
+#dropdown-menu a:last-child {
+  border-bottom: none;
+}
+
+#dropdown-menu a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
+}
+
+.frame .overlap {
+    position: absolute;
+    width: 1407px;
+    height: 1262px;
+    top: 23px;
+    left: 240px;
+}
+
+.frame .rectangle{
+    position: absolute;
+    width: 841px;
+    height: 1221px;
+    top: 41px;
+    left: 271px;
+    object-fit: cover;
+}
+
+.frame .text-wrapper {
+    position: absolute;
+    top: 0;
+    left: 580px;
+    font-family: "Outfit", Helvetica, sans-serif;
+    font-weight: 700;
+    color: #000000;
+    font-size: 36px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.frame .group {
+    position: absolute;
+    width: 442px;
+    height: 594px;
+    top: 81px;
+    left: 965px;
+}
+
+.frame .overlap-group {
+    position: relative;
+    width: 440px;
+    height: 594px;
+}
+
+.frame .img {
+    width: 440px;
+    height: 496px;
+    top: 98px;
+    position: absolute;
+    left: 0;
+}
+
+.frame .microsoft {
+    position: absolute;
+    width: 275px;
+    height: 275px;
+    top: 0;
+    left: 83px;
+    object-fit: cover;
+}
+
+.frame .p {
+    position: absolute;
+    width: 396px;
+    top: 289px;
+    left: 36px;
+    font-family: "Outfit", Helvetica, sans-serif;
+    font-weight: 700;
+    color: #000000;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.frame .overlap-wrapper {
+    position: absolute;
+    width: 405px;
+    height: 653px;
+    top: 22px;
+    left: 0;
+}
+
+.frame .overlap-2 {
+    position: relative;
+    width: 403px;
+    height: 653px;
+}
+
+.frame .rectangle-2 {
+    width: 403px;
+    height: 496px;
+    top: 157px;
+    position: absolute;
+    left: 0;
+}
+.frame .chatgpt-logo {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: 75px;
+    left: 100px;
+    object-fit: cover;
+}
+
+
+.frame .text-wrapper-2 {
+    position: absolute;
+    width: 322px;
+    top: 298px;
+    left: 48px;
+    font-family: "Outfit", Helvetica, sans-serif;
+    font-weight: 700;
+    color: #000000;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.frame .screenshot {
+    position: absolute;
+    width: 522px;
+    height: 319px;
+    top: 945px;
+    left: 0;
+    object-fit: cover;
+    border-radius: 80px;
+}
+
+.frame .group-2 {
+    position: absolute;
+    width: 220px; 
+    height: 270px; 
+    top: 685px;    
+    left: 200px;  
+}
+
+
+.frame .overlap-group-wrapper {
+    position: absolute;
+    width: 557px;
+    height: 587px;
+    top: 675px;
+    left: 848px;
+}
+
+.frame .overlap-3 {
+    position: relative;
+    height: 589px;
+    top: -2px;
+}
+
+.frame .screenshot-2 {
+    position: absolute;
+    width: 557px;
+    height: 331px;
+    top: 258px;
+    left: 0px;
+    object-fit: cover;
+}
+
+.frame .arrow {
+    position: absolute;
+    width: 144px;
+    height: 258px;
+    top: 0;
+    left: 204px;
+}
+
+.frame .img-2 {
+    position: absolute;
+    width: 41px;
+    height: 36px;
+    top: 6px;
+    left: -170px;
+}
+
+.frame .overlap-4 {
+    position: absolute;
+    width: 1400px;
+    height: 1125px;
+    top: 1590px;
+    left: 210px;
+}
+
+.frame .group-3 {
+    position: absolute;
+    width: 312px;
+    height: 53px;
+    top: 0;
+    left: 590px;
+}
+
+.frame .overlap-5 {
+    position: absolute;
+    width: 266px;
+    height: 50px;
+    top: 0;
+    left: -3px;
+}
+
+.frame .text-wrapper-3 {
+    position: absolute;
+    top: 11px;
+    left: 44px;
+    font-family: "Outfit", Helvetica, sans-serif;
+    font-weight: 700;
+    color: #000000;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.frame .vector {
+    position: absolute;
+    width: 58px;
+    height: 50px;
+    top: 0;
+    left: 0;
+}
+
+.frame .vector-2 {
+    position: absolute;
+    width: 50px;
+    height: 56px;
+    top: -3px;
+    left: 263px;
+}
+
+.frame .chatgpt-image-jun {
+    position: absolute;
+    width: 978px;
+    height: 978px;
+    top: 27px;
+    left: 200px;
+    object-fit: cover; 
+}
+
+.frame .div-wrapper {
+    position: absolute;
+    width: 436px;
+    height: 530px;
+    top: 500px;
+    left: 0;
+}
+
+.frame .overlap-6 {
+    position: absolute;
+    width: 408px;
+    height: 530px;
+    left: 13px;
+}
+
+.frame .rectangle-3 {
+    width: 408px;
+    height: 466px;
+    top: 64px;
+    position: absolute;
+    left: 0;
+}
+
+.frame .text-wrapper-4 {
+    position: absolute;
+    width: 263px;
+    top: 193px;
+    left: 83px;
+    font-family: "Outfit", Helvetica, sans-serif;
+    font-weight: 700;
+    color: #000000;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.frame .profile {
+    position: absolute;
+    width: 151px;
+    height: 151px;
+    top: 0;
+    left: 129px;
+    object-fit: cover;
+}
+
+.frame .group-4 {
+    position: absolute;
+    width: 600px;
+    height: 332px;
+    top: 793px;
+    left: 800px;
+}
+
+.frame .overlap-7 {
+    position: relative;
+    width: 598px;
+    height: 332px;
+    background-image: url(./img/Rectangle-22.svg);
+    background-size: 100% 100%;
+}
+
+.frame .element {
+    position: absolute;
+    width: 133px;
+    height: 133px;
+    top: 94px;
+    left: 35px;
+    object-fit: cover;
+}
+
+.frame .text-wrapper-5 {
+    position: absolute;
+    width: 384px;
+    top: 78px;
+    left: 198px;
+    font-family: "Outfit", Helvetica, sans-serif;
+    font-weight: 700;
+    color: #000000;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.frame .group-5 {
+    position: absolute;
+    width: 346px;
+    height: 449px;
+    top: 379px;
+    left: 554px;
+}
+
+.frame .overlap-8 {
+    position: relative;
+    width: 345px;
+    height: 449px;
+    left: -1px;
+}
+
+.frame .vector-3 {
+    position: absolute;
+    width: 345px;
+    height: 263px;
+    top: 56px;
+    left: 0;
+}
+
+.frame .unnamed {
+    position: absolute;
+    width: 111px;
+    height: 111px;
+    top: 0;
+    left: 124px;
+    object-fit: cover;
+}
+
+.frame .text-wrapper-6 {
+    position: absolute;
+    width: 222px;
+    top: 137px;
+    left: 72px;
+    font-family: "Outfit", Helvetica, sans-serif;
+    font-weight: 700;
+    color: #000000;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.frame .overlap-9 {
+    position: absolute;
+    width: 1383px;
+    height: 325px;
+    top: 2983px;
+    left: 49px;
+}
+
+.frame .overlap-10 {
+    position: absolute;
+    width: 1342px;
+    height: 325px;
+    top: 0;
+    left: 0;
+}
+
+.frame .line {
+    position: absolute;
+    width: 1730px; 
+    height: 1px;
+    top: 5px;
+    left: 66%;
+    transform: translateX(-50%);
+    background-color: black;
+}
+
+
+.frame .chatgpt-image-jun-2 {
+    position: absolute;
+    width: 223px;
+    height: 223px;
+    top: 0;
+    left: 200px;
+    object-fit: cover;
+}
+
+.frame .text-wrapper-7 {
+    position: absolute;
+    width: 399px;
+    top: 200px;
+    left: 130px;
+    font-family: "Outfit", Helvetica, sans-serif;
+    font-weight: 700;
+    color: #000000;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.frame .text-wrapper-8 {
+    position: absolute;
+    width: 110px;
+    top: 110px;
+    left: 780px;
+    font-family: "Outfit", Helvetica, sans-serif;
+    font-weight: 700;
+    color: #000000;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.frame .text-wrapper-9 {
+    position: absolute;
+    top: 188px;
+    left: 805px;
+    font-family: "Outfit", Helvetica, sans-serif;
+    font-weight: 700;
+    color: #000000bf;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.frame .text-wrapper-10 {
+    position: absolute;
+    top: 245px;
+    left: 805px;
+    font-family: "Outfit", Helvetica, sans-serif;
+    font-weight: 700;
+    color: #000000bf;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.frame .text-wrapper-11 {
+    position: absolute;
+    top: 295px;
+    left: 767px;
+    font-family: "Outfit", Helvetica, sans-serif;
+    font-weight: 700;
+    color: #000000bf;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.frame .text-wrapper-12 {
+    position: absolute;
+    width: 537px;
+    top: 163px;
+    left: 1130px;
+    font-family: "Outfit", Helvetica, sans-serif;
+    font-weight: 600;
+    color: #000000;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.frame .vector-4 {
+    position: absolute;
+    width: 39px;
+    height: 34px;
+    top: 285px;
+    left: 1189px;
+}
+
+.frame .vector-5 {
+    position: absolute;
+    width: 33px;
+    height: 34px;
+    top: 284px;
+    left: 1256px;
+}
+
+.frame .vector-6 {
+    position: absolute;
+    width: 31px;
+    height: 34px;
+    top: 284px;
+    left: 1360px;
+}
+
+.frame .vector-7 {
+    position: absolute;
+    width: 33px;
+    height: 28px;
+    top: 285px;
+    left: 1310px;
+}
+
+.frame .text-wrapper-13 {
+    position: absolute;
+    top: 3328px;
+    left: 847px;
+    font-family: "Outfit", Helvetica, sans-serif;
+    font-weight: 700;
+    color: #000000bf;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+

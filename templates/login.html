@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='globals.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='login.css') }}">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet" />
+  <title>Login</title>
+</head>
+<body>
+  <div class="frame">
+    <div class="overlap-wrapper">
+      <div class="overlap">
+        <img class="rectangle" src="{{ url_for('static', filename='img/Rectangle-8.svg') }}" />
+        <div class="div">
+          <div class="text-wrapper">Login</div>
+
+          <form action="{{ url_for('login', next=request.args.get('next', 'index')) }}" method="POST" class="login-form">
+           
+            <input type="hidden" name="next" value="{{ request.args.get('next', 'index') }}">
+
+            <div class="overlap-group input-group">
+              <div class="overlap-2">
+                <img class="line" src="{{ url_for('static', filename='img/Line-3.svg') }}" />
+              </div>
+              <input type="email" id="email" name="email" class="input-overlay" placeholder=" " required />
+              <label for="email" class="text-wrapper-2">Email</label>
+              <img class="img" src="{{ url_for('static', filename='img/Frame-3.svg') }}" />
+            </div>
+
+            <div class="overlap-3 input-group">
+              <div class="overlap-2">
+                <img class="line-2" src="{{ url_for('static', filename='img/Line-4.svg') }}" />
+              </div>
+              <input type="password" id="password" name="password" class="input-overlay" placeholder=" " required />
+              <label for="password" class="text-wrapper-2">Password</label>
+              <img class="img" src="{{ url_for('static', filename='img/Frame-2.svg') }}" />
+            </div>
+
+            <div class="group">
+              <div class="overlap-group-2">
+                <button type="submit" class="login-button">Login</button>
+              </div>
+            </div>
+          </form>
+
+          <div class="dont-have-an-account">
+            <p class="p">
+              Don’t have an account?
+              <a href="{{ url_for('register', next=request.args.get('next', 'index')) }}">Register</a>
+            </p>
+          </div>
+        </div>
+
+        <img class="group-2" src="{{ url_for('static', filename='img/Group-10.png') }}" />
+      </div>
+    </div>
+  </div>
+</body>
+</html>

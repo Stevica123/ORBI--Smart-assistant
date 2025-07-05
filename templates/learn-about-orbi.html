@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='globals.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='learn-about-orbi.css') }}">
+     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet" />
+
+     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+    <title>Learn about ORBI</title>
+  </head>
+  <body>
+    <div class="frame">
+      <div class="div">
+
+         <img id="menu-icon" class="img-2" src="{{ url_for('static', filename='img/Frame.svg') }}" />
+
+        <div id="dropdown-menu">
+          <a href="{{ url_for('index') }}">Home</a>
+          <a href="{{ url_for('about') }}">About</a>
+          <a href="{{ url_for('learn') }}">Learn About Orbi</a>
+          <a href="{{ url_for('contact') }}">Contact</a>
+        </div>
+            <div class="overlap" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+            <img class="rectangle" src="{{ url_for('static', filename='img/Rectangle.png') }}" />
+            <div class="text-wrapper">Discover Orbi</div>
+            <div class="group" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300">
+                <div class="overlap-group">
+                    <img class="img" src="{{ url_for('static', filename='img/Rectangle-19.svg') }}" />
+                    <img class="microsoft" src="{{ url_for('static', filename='img/Microsoft-VisualStudio-Services-Icons.png') }}" />
+                    <p class="p">
+                        Orbi uses MongoDB Atlas as a cloud-based NoSQL database to store its knowledge. Within the knowledge_db 
+                        collection, data is structured as qa_pairs—questions and answers that the assistant uses to respond
+                        quickly and accurately. This setup allows for easy updates, analysis, and learning, with secure and
+                        real-time access.
+                    </p>
+                </div>
+            </div>
+                <div class="overlap-wrapper" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+                    <div class="overlap-2">
+                        <img class="rectangle-2" src="{{ url_for('static', filename='img/Rectangle-20.svg') }}" />
+                        <img class="chatgpt-logo" src="{{ url_for('static', filename='img/chatgpt-logo-1.png') }}" />
+                        <p class="text-wrapper-2">
+                            Orbi is powered by the ChatGPT 3.5 Turbo model, 
+                            a state-of-the-art language model developed by OpenAI. 
+                            Using the OpenAI API, Orbi processes user questions, understands context, 
+                            and generates fast, natural, and helpful responses in real time—making the assistant intelligent, 
+                            responsive, and easy to interact with.
+                        </p>
+                    </div>
+                </div>
+                <img class="screenshot" src="{{ url_for('static', filename='img/screenshot.png') }}"/>
+                <img class="group-2" src="{{ url_for('static', filename='img/Arrow-3.svg') }}" data-aos="fade-down" data-aos-duration="800" />
+                <div class="overlap-group-wrapper" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                    <div class="overlap-3">
+                <img class="screenshot-2" src="{{ url_for('static', filename='img/screenshot-1.png') }}" />
+                <img class="arrow" src="{{ url_for('static', filename='img/Arrow-4.svg') }}" data-aos="fade-down" data-aos-duration="800" />
+             </div>
+        </div>
+        </div>
+                    <div class="overlap-4">
+                        <div class="group-3">
+                            <div class="overlap-5">
+                    <div class="text-wrapper-3">Orbi’ s Interface Pipeline</div> 
+                    <img class="vector" src="{{ url_for('static', filename='img/Vector 1-1.svg') }}"  />
+                </div>
+                    <img class="vector-2" src="{{ url_for('static', filename='img/Vector 2-2.svg') }}" />
+                </div>
+                <img class="chatgpt-image-jun"  src="{{ url_for('static', filename='img/Chatgpt-Image-Jun-24-2025-11-29-07-AM.png') }}"/>
+                <div class="div-wrapper">
+                    <div class="overlap-6">
+                        <img class="rectangle-3" src="{{ url_for('static', filename='img/Rectangle-21.svg') }}" />
+                        <p class="text-wrapper-4">
+                            Spline was used to create and customize 3D elements that enhance the visual experience of Orbi. These 
+                            models were integrated directly into the Figma layout to give the assistant a more dynamic and modern
+                            look, all while keeping performance in mind.
+                        </p>
+                        <img class="profile" src="{{ url_for('static', filename='img/channels4_profile-1.png') }}" />
+                    </div>
+                </div>
+                 <div class="group-4">
+                    <div class="overlap-7">
+                        <img class="element" src="{{ url_for('static', filename='img/1_auh8o8yzc4kBPtr2wKpWqa-1.png') }}" />
+                        <p class="text-wrapper-5">
+                            Anima was used to turn static designs into interactive prototypes and export production-ready code. It
+                            allowed me to simulate real user flows directly from Figma, adding animations, transitions, and
+                            responsive behavior—all without writing code during the design phase.
+                        </p>
+                    </div>
+                 </div>
+                 <div class="group-5">
+                    <div class="overlap-8">
+                        <img class="vector-3" src="{{ url_for('static', filename='img/Vector 3.svg') }}" />
+                        <img class="unnamed" src="{{ url_for('static', filename='img/unnamed-1.png') }}" />
+                        <p class="text-wrapper-6">
+                            The entire design of Orbi was created in Figma, enabling a clean, intuitive, and consistent user
+                            interface. Figma allowed for quick iterations, real-time adjustments, and a streamlined design process
+                            focused on clarity, usability, and visual harmony.
+                        </p>
+                    </div>
+                 </div>
+             </div>
+             <div class="overlap-9">
+                <div class="overlap-10">
+                    <img class="line" src="{{ url_for('static', filename='img/Line.svg') }}" />
+                    <img class="chatgpt-image-jun-2" src="{{ url_for('static', filename='img/Chatgpt-Image-Jun-16-2025-04-02-37-PM.png') }}" />
+                    <p class="text-wrapper-7">
+                        Driven by curiosity, guided by simplicity, and built to make technology feel more human. Bringing clarity
+                        and confidence to your digital world—one interaction at a time.
+                    </p>
+                </div>
+                <div class="text-wrapper-8">Quick Link’s</div>
+           <a href="{{ url_for('index') }}" class="text-wrapper-9">Home</a>
+           <a href="{{ url_for('about') }}" class="text-wrapper-10">About</a>
+          <a href="{{ url_for('learn') }}" class="text-wrapper-11">Learn About Orbi</a>
+          <p class="text-wrapper-12">© 2025 ORBI Ltd. All Rights Reserved</p>
+          <a href="https://www.facebook.com/login" target="_blank">
+          <img class="vector-4" src="{{ url_for('static', filename='img/vector.svg') }}" />
+          </a>
+          <a href="https://www.instagram.com" target="_blank">
+          <img class="vector-5" src="{{ url_for('static', filename='img/vector-2.svg') }}" />
+          </a>
+          <a href="https://twitter.com/login" target="_blank">
+          <img class="vector-6" src="{{ url_for('static', filename='img/vector-3.svg') }}" />
+          </a>
+          <a href="https://www.linkedin.com/login" target="_blank">
+          <img class="vector-7" src="{{ url_for('static', filename='img/vector-4.svg') }}" />
+          </a>
+        </div>
+         <a href="{{ url_for('contact') }}" class="text-wrapper-13">Contact</a>
+      </div>
+    </div>
+    <script src="{{ url_for('static', filename='menu.js') }}"></script>
+     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: false,
+      });
+    </script>
+  </body>
+</html>
+
+ 

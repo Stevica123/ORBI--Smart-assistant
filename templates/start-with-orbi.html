@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='globals.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='start-with-orbi.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet" />
+    <title>Start with ORBI</title>
+  </head>
+  <body>
+    <div class="frame">
+      <div class="div">
+
+        <div class="frame">
+          <div class="div">
+            <div class="text-wrapper">Chat with Orbi</div>
+
+            {% if user %}
+            <div class="profile-container-topright">
+              <div class="profile-circle" id="profileCircle" title="{{ user }}">
+                {{ user[0]|upper }}
+                <div class="dropdown" id="profileDropdown" style="display: none;">
+                  <a href="{{ url_for('logout') }}">Logout</a>
+                </div>
+              </div>
+            </div>
+            {% endif %}
+            <script src="{{ url_for('static', filename='profile.js') }}"></script>
+          </div>
+        </div>
+
+        
+        <div class="overlap">
+          <div class="group">
+            <div class="overlap-group" id="newChatBtn" tabindex="0">
+              <div class="text-wrapper-2">+ New Chat</div>
+            </div>
+          </div>
+
+          <div class="text-wrapper-3">Chats</div>
+
+          <div id="chatList" class="chat-list">
+            
+          </div>
+        </div>
+
+        
+        <div class="overlap-2">
+  <div class="chat-container" style="display: flex; flex-direction: column; height: 100%;">
+
+    <h2 id="chatTitle" style="margin-bottom: 20px;">Select or create a chat</h2>
+
+    <div id="chatMessagesContainer" style="flex-grow: 1; overflow-y: auto; max-height: 750px; margin-bottom: 20px; padding-right: 10px;"></div>
+
+    <div style="display: flex; gap: 10px; align-items: center; margin-top: auto;">
+      <input id="chatInput" type="text" placeholder="Ask Orbi something..." 
+             style="flex-grow: 1; padding: 12px 15px; border-radius: 30px; border: 2px solid #048bfa; font-size: 20px; outline: none;background-color: #e7e7e7;">
+      <button id="sendBtn" 
+              style="width: 100px; background-color: #3a8ad7; border-radius: 25px; border: 1px solid; color: #fff; font-weight: 600; font-size: 20px; cursor: pointer; height: 60px;">
+        Send
+      </button>
+    </div>
+  </div>
+</div>
+
+        {% if not user %}
+        <div class="auth-overlay">
+          <div class="auth-modal">
+            <h2>Welcome back</h2>
+            <p>Log in or register to continue using Orbi.</p>
+            <a href="{{ url_for('login', next='start') }}"><button class="auth-btn light">Log in</button></a>
+            <a href="{{ url_for('register', next='start') }}"><button class="auth-btn dark">Register</button></a>
+            <a href="/" class="back-home">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              Back to Home Page
+            </a>
+          </div>
+        </div>
+        {% endif %}
+
+      </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='chats.js') }}"></script>
+  </body>
+</html>

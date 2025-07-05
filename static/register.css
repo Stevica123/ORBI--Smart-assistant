@@ -1,0 +1,326 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.frame {
+  background-color: rgba(255, 255, 255, 1.0);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start; 
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+.frame .overlap-wrapper {
+  background-color: rgba(255, 255, 255 , 1.0);
+  background: linear-gradient(
+      90deg,
+      rgba(153, 199, 243, 1) 0%,
+      rgba(124, 161, 196, 1) 49%,
+      rgba(89, 116, 141, 1) 100%
+  );
+  width: 100vw;
+  height: 1024px;
+}
+
+.frame .overlap {
+  position: relative;
+  width: 1412px;
+  height: 787px;
+  top: 40px;  /* Поместено погоре */
+  left: 240px;
+}
+
+.frame .rectangle {
+  position: absolute;
+  width: 915px;
+  height: 626px;
+  top: 73px;
+  left: -20px;
+}
+
+.frame .div {
+  position: absolute;
+  width: 403px;
+  height: 399px;
+  top: 158px;
+  left: 200px;
+}
+
+.frame .text-wrapper {
+  position: absolute;
+  width: 206px;
+  top: -40px;
+  left: 120px;
+  font-family: "Outfit", Helvetica, sans-serif;
+  font-weight: 800;
+  color: #0c4f8c;
+  font-size: 36px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .overlap-group {
+  position: absolute;
+  width: 380px;
+  height: 44px;
+  top: 90px;
+  left: 0;
+}
+
+.frame .overlap-2 {
+  position: absolute;
+  width: 380px;
+  height: 44px;
+  top: -50px;
+  left: 0;
+}
+
+.frame .line {
+  top: 37px;
+  left: 0;
+  position: absolute;
+  width: 380px;
+  height: 1px;
+  object-fit: cover;
+}
+
+.frame .component {
+  position: absolute;
+  width: 227px;
+  height: 44px;
+  top: 0;
+  left: 0;
+  border: none;
+  background: none;
+  font-family: "Outfit", Helvetica, sans-serif;
+  font-weight: 800;
+  color: #0c4f8c;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+  padding: 0;
+  padding-left: 2px;
+}
+
+.frame .vector {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  top: -40px;     /* прилагоди висина да биде во средина на полето */
+  right: 10px;     /* десно на линијата */
+}
+
+.frame .overlap-3 {
+  position: absolute;
+  width: 380px;
+  height: 44px;
+  top: 160px;
+  left: 0;
+}
+
+.frame .img {
+  position: absolute;
+  width: 380px;
+  height: 1px;
+  top: 39px;
+  left: 0;
+  object-fit: cover;
+}
+
+.frame .div-wrapper {
+  position: absolute;
+  width: 227px;
+  height: 44px;
+  top: 0;
+  left: 0;
+}
+
+.frame .img-2 {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: -43px;
+  left: 347px;
+}
+
+.frame .group {
+  position: absolute;
+  width: 325px;
+  height: 65px;
+  top: 280px;
+  left: 29px;
+}
+
+.frame .overlap-group-2 {
+  position: relative;
+  width: 323px;
+  height: 68px;
+}
+
+.frame .rectangle-2 {
+  position: absolute;
+  width: 323px;
+  height: 62px;
+  top: 0;
+  left: 0;
+  border-radius: 45px;
+  background: linear-gradient(
+      180deg,
+      rgba(153, 199, 243, 1) 0%,
+      rgba(89, 116, 141, 1) 100%
+  );
+}
+
+.frame .text-wrapper-3 {
+  position: absolute;
+  width: 117px;
+  top: 20px;
+  left: 110px;
+  font-family: "Outfit", Helvetica, sans-serif;
+  font-weight: 800;
+  color: #fafcff;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .overlap-4 {
+  position: absolute;
+  width: 380px;
+  height: 44px;
+  top: 230px;
+  left: 0;
+}
+
+.frame .img-3 {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: -45px;
+  left: 347px;
+}
+
+.frame .dont-have-an-account {
+  position: absolute;
+  width: 227px;
+  height: 19px;
+  top: 420px;
+  left: 77px;
+}
+
+.frame .don-t-have-an {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  font-family:"Outfit", Helvetica, sans-serif;
+  font-weight: 800;
+  color: #0c4f8c;
+  font-size: 15px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .group-2 {
+  position: absolute;
+  width: 766px;
+  height: 787px;
+  top: -170px;
+  left: 450px;
+}
+
+.input-group {
+  position: relative;
+  width: 380px;
+  margin-top: 30px;  
+  height: 60px;       
+}
+.input-overlay {
+  position: absolute;
+  top: -50px;
+  left: 0;
+  width: 100%;
+  height: 44px;
+
+  background: none;
+  border: none;
+  outline: none;
+
+  font-family: "Outfit", Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: #0c4f8c;
+
+  padding: 0 5px;
+  line-height: 44px;
+  box-sizing: border-box;
+  cursor: text;
+
+  /* 🔽 Ова е најважно за еднолиниски текст */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+.input-overlay::placeholder {
+  color: transparent;
+}
+
+.input-overlay:focus + .text-wrapper-2,
+.input-overlay:not(:placeholder-shown) + .text-wrapper-2 {
+  top: -60px;   
+  font-size: 14px;
+  color: #59748d;
+  transition: all 0.3s ease;
+}
+
+.text-wrapper-2 {
+  position: absolute;
+  top: -40px;  
+  left: 5px;
+  font-family: "Outfit", Helvetica, sans-serif;
+  font-weight: 800;
+  color: #0c4f8c;
+  font-size: 20px;
+  pointer-events: none;
+  line-height: 1;
+  transition: all 0.3s ease;
+}
+
+.line, .img, .img-2, .img-3, .vector {
+  position: relative;
+  width: 380px;
+  height: 1px;
+  margin-bottom: 12px; 
+  object-fit: cover;
+}
+
+.vector, .img-2, .img-3 {
+  width: 24px;
+  height: 24px;
+  top: 10px;
+  right: 0;
+  left: auto;
+  object-fit: contain;
+}
+
+.overlap-group-2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 45px;
+  background: linear-gradient(180deg, #99c7f3 0%, #59748d 100%);
+  color: #fafcff;
+  font-family: "Outfit", Helvetica, sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+}

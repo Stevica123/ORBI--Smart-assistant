@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='globals.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='about.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet" />
+
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+    <title>About us</title>
+  </head>
+  <body>
+    <div class="frame">
+      <div class="div">
+
+        <img id="menu-icon" class="img-2" src="{{ url_for('static', filename='img/Frame.svg') }}" />
+
+        <div id="dropdown-menu">
+          <a href="{{ url_for('index') }}">Home</a>
+          <a href="{{ url_for('about') }}">About</a>
+          <a href="{{ url_for('learn') }}">Learn About Orbi</a>
+          <a href="{{ url_for('contact') }}">Contact</a>
+        </div>
+
+        <div class="text-wrapper" data-aos="fade-up">About us</div>
+        <div class="overlap" data-aos="zoom-in-up">
+          <div class="text-wrapper-2">👨‍💻</div>
+          <div class="text-wrapper-3">The Story Behind Orbi</div>
+        </div>
+        <p class="i-am-the-sole-author" data-aos="fade-up">
+          I am the sole author and designer of Orbi — a smart digital assistant created with curiosity and dedication.I
+          am a student passionate about technology, design, and solving real problems.<br />
+          I realized that you don’t always need a big team or budget to create something valuable — all you need is an
+          idea, persistence, and vision.I started this project with one goal: To create an assistant that is practical,
+          intuitive, and useful for everyday use.
+        </p>
+        <div class="overlap-group" data-aos="fade-right">
+          <div class="rectangle"></div>
+          <img class="chatgpt-image-jun" src="{{ url_for('static', filename='img/Chatgpt-Image-Jun-20-2025-03-59-29-PM.png') }}" />
+        </div>
+        <div class="text-wrapper-4">🚀</div>
+        <div class="text-wrapper-5">Orbi’s Purpose and Vision</div>
+        <p class="in-a-world">
+          In a world overwhelmed with information, Orbi aims to simplify it.<br />
+          It is created to respond clearly, quickly, and naturally, and to be a support whether you are at school, at
+          work, or at home.<br /><br />
+          My mission was to create a digital assistant that:
+        </p>
+        <div class="group">
+          <div class="overlap-group-2">
+            <img class="img" src="{{ url_for('static', filename='img/Live-Chat-Widget-101-Definition-Benefits-Best-Tools-More_no_bg.png') }}" />
+            <p class="p">Understands your question (without complicated commands)</p>
+          </div>
+        </div>
+        <div class="overlap-wrapper">
+          <div class="overlap-group-2">
+            <img class="img" src="{{ url_for('static', filename='img/Why-a-360-Customer-View-Matters-And-How-to-Create-One.png') }}" />
+            <p class="text-wrapper-6">Responds with understanding and human logic</p>
+          </div>
+        </div>
+        <div class="overlap-group-wrapper">
+          <div class="overlap-group-2">
+            <img class="img" src="{{ url_for('static', filename='img/5092143-1.png') }}" />
+            <p class="text-wrapper-6">Is available at any moment — independent of platforms</p>
+          </div>
+        </div>
+        <div class="overlap-2">
+          <img class="element" src="{{ url_for('static', filename='img/1721357791484.png') }}" />
+          <img class="pngtree-responsive" src="{{ url_for('static', filename='img/pngtree-responsive-web-design-3d-rendering-of-a-flying-laptop-mobile-and-image_3792273.png') }}" />
+        </div>
+        <p class="orbi-s-creation">
+          <span class="span">🛠️ Orbi’s Creation Process</span> 
+        </p>
+        <p class="text-wrapper-8">
+          The project is fully designed in Figma, with animations and interactions made through Anima and Spline (for 3D
+          effects).The next step is to connect it with code, bringing Orbi to life as a fully functional web/app.This
+          integration will allow Orbi to move beyond concept and become a real tool people can interact with.
+        </p>
+        <div class="overlap-3">
+          <div class="rectangle-2"></div>
+          <img class="unnamed" src="{{ url_for('static', filename='img/unnamed.png') }}" />
+          <img class="element-2" src="{{ url_for('static', filename='img/1_auh8o8yzc4kBPtr2wKpWqA.png') }}" />
+          <img class="python-programming" src="{{ url_for('static', filename='img/python-programming-language.png') }}" />
+          <img class="profile" src="{{ url_for('static', filename='img/channels4_profile.png') }}" />
+          <div class="text-wrapper-9">Figma</div>
+          <div class="text-wrapper-10">Anima</div>
+          <div class="text-wrapper-11">Python</div>
+          <div class="text-wrapper-12">Spline</div>
+        </div>
+        <img class="line" src="{{ url_for('static', filename='img/Line.svg') }}" />
+        <div class="overlap-4">
+          <img class="chatgpt-image-jun-2" src="{{ url_for('static', filename='img/Chatgpt-Image-Jun-16-2025-04-02-37-PM.png') }}" />
+          <p class="text-wrapper-13">
+            Driven by curiosity, guided by simplicity, and built to make technology feel more human. Bringing clarity
+            and confidence to your digital world—one interaction at a time.
+          </p>
+        </div>
+        <div class="text-wrapper-14">Quick Link’s</div>
+        <a href="{{ url_for('index') }}" class="text-wrapper-15">Home</a>
+        <a href="{{ url_for('about') }}" class="text-wrapper-16">About</a>
+        <a href="{{ url_for('learn') }}" class="text-wrapper-17">Learn About Orbi</a>
+        <a href="{{ url_for('contact') }}" class="text-wrapper-18">Contact</a>
+        <p class="text-wrapper-19">© 2025 ORBI Ltd. All Rights Reserved</p>
+        <a href="https://www.facebook.com/login" target="_blank">
+          <img class="vector" src="{{ url_for('static', filename='img/vector.svg') }}" />
+        </a>
+        <a href="https://www.instagram.com" target="_blank">
+          <img class="vector-2" src="{{ url_for('static', filename='img/vector-2.svg') }}" />
+        </a>
+        <a href="https://twitter.com/login" target="_blank">
+          <img class="vector-3" src="{{ url_for('static', filename='img/vector-3.svg') }}" />
+        </a>
+        <a href="https://www.linkedin.com/login" target="_blank">
+          <img class="vector-4" src="{{ url_for('static', filename='img/vector-4.svg') }}" />
+        </a>
+      </div>
+    </div>
+    <script src="{{ url_for('static', filename='menu.js') }}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: true,
+      });
+    </script>
+  </body>
+</html>
