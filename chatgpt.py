@@ -1,8 +1,13 @@
 import time
 from openai import OpenAI
 import openai
+from dotenv import load_dotenv
+import os
 
-client = OpenAI(api_key="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") 
+load_dotenv()
+
+api_key = os.getenv("OPENAI_API_KEY")
+client = OpenAI(api_key=api_key)
 
 def query_chatgpt(question, retries=3, delay=3):
     for attempt in range(1, retries + 1):
